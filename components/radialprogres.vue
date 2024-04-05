@@ -4,7 +4,7 @@
         :style="'--value:' + valueProps + '; ' + '--size:' + sizeProps + '; ' + '--thickness:' + strokeWidth + ';'" 
         role="progressbar"
     >
-        {{ strokeColor }}
+        <slot></slot>
     </div>
 </template>
 
