@@ -1,7 +1,7 @@
 <template>
     <div
-        :class="'radial-progress ' + bgColor + ' ' + 'text-[' + strokeColor + ']' "
-        :style="'--value:' + valueProps + '; ' + '--size:' + sizeProps + '; ' + '--thickness:' + strokeWidth + ';'" 
+        :class="`radial-progress ' + ${bgColor}`"
+        :style="`--value:${valueProps}; --size:${sizeProps}; --thickness:${strokeWidth}; color: ${strokeColor}`" 
         role="progressbar"
     >
         <slot></slot>
