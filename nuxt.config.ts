@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
+  modules: ['@nuxt/eslint'],
   runtimeConfig: {
     public: {
       APP_NAME: process.env.APP_NAME,
