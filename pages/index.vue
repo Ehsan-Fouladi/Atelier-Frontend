@@ -1,31 +1,26 @@
 <template>
-    <section>
-        <div class="bg-stone-200 flex flex-col justify-between items-center w-full h-[41rem]">
-            <div class="flex flex-shrink justify-center items-center mt-56 lg:mt-32">
-                <span class="font-medium text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-stone-400">Luxury</span>
-                <img class="lg:h-96 lg:w-80 md:w-56 w-32 animate-bounce" src="/img/home-1-img-6_1_425x572.png" alt="clock">
-                <span class="font-medium text-3xl sm:text-4xl md:text-7xl lg:text-9xl text-stone-400">Brands</span>
-            </div>
-            <div class="flex items-center justify-between uppercase w-full p-4">
-                <span class="font-medium text-sm text-gray-700">Previous</span>
-                <span class="font-medium text-sm text-gray-700 text-balance">Browse collection</span>
-                <span class="font-medium text-sm text-gray-700">next</span>
-            </div>
+    <section class="bg-stone-200 flex flex-col justify-between items-center w-full h-[41rem]">
+        <div class="flex flex-shrink justify-center items-center mt-56 lg:mt-32">
+            <span class="font-medium text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-stone-400">Luxury</span>
+            <img class="lg:h-96 lg:w-80 md:w-56 w-32 animate-bounce" src="/img/home-1-img-6_1_425x572.png" alt="clock">
+            <span class="font-medium text-3xl sm:text-4xl md:text-7xl lg:text-9xl text-stone-400">Brands</span>
+        </div>
+        <div class="flex items-center justify-between uppercase w-full p-4">
+            <span class="font-medium text-sm text-gray-700">Previous</span>
+            <span class="font-medium text-sm text-gray-700 text-balance">Browse collection</span>
+            <span class="font-medium text-sm text-gray-700">next</span>
         </div>
     </section>
-    <section>
-        <div class="mt-32">
-            <div class="w-full flex flex-col justify-center items-center">
-                <span class="text-3xl lg:text-5xl font-medium text-center">The Lawson Collection</span>
-                <p class="mt-10 capitalize font-medium break-words leading-7 text-gray-600 md:w-2/3 lg:w-1/2 text-center text-sm p-3 md:p-0">
-                    We are happy to introduce the new Lawson Collection. These are three quartz models designed with simplicity and elegance kept in mind. They come in different sizes and colors, and all feature a stainless steel back — leaving enough space for a personalized engraving. The engraving service is complimentary with any watch from the Lawson series.
-                </p>
-            </div>
+    <section class="mt-32">
+        <div class="w-full flex flex-col justify-center items-center">
+            <span class="text-3xl lg:text-5xl font-medium text-center">The Lawson Collection</span>
+            <p class="mt-10 capitalize font-medium break-words leading-7 text-gray-600 md:w-2/3 lg:w-1/2 text-center text-sm p-3 md:p-0">
+                We are happy to introduce the new Lawson Collection. These are three quartz models designed with simplicity and elegance kept in mind. They come in different sizes and colors, and all feature a stainless steel back — leaving enough space for a personalized engraving. The engraving service is complimentary with any watch from the Lawson series.
+            </p>
         </div>
     </section>
-    <section>
-        <div class="mt-20 w-full flex flex-auto items-center justify-center">
-            <div class="flex flex-wrap items-center justify-center gap-5 md:p-0 w-full p-2">
+    <section class="mt-20 w-full flex flex-auto items-center justify-center">
+        <div class="flex flex-wrap items-center justify-center gap-5 md:p-0 w-full p-2">
                 <div class="bg-stone-100 w-96 h-full p-5 relative group transition-all">
                     <div class="absolute start-5 top-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -134,12 +129,10 @@
                         </NuxtLink>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
-    <section>
-        <div class="mt-32 w-full flex flex-col lg:flex-row justify-center lg:items-center gap-5">
-            <div class="w-full lg:w-1/3 flex flex-col justify-around p-3 sm:p-7 lg:p-0">
+    <section class="mt-32 w-full flex flex-col lg:flex-row justify-center lg:items-center gap-5">
+        <div class="w-full lg:w-1/3 flex flex-col justify-around p-3 sm:p-7 lg:p-0">
                 <span class="font-medium text-4xl caption-bottom text-gray-700">Swiss Essence</span>
                 <p class="font-medium text-sm leading-loose break-words mt-5">
                     The first association that comes to one’s mind with the phrase “a good wristwatch” is naturally one made somewhere in Switzerland. Do you want to know what makes Swiss watches stand out?
@@ -149,15 +142,13 @@
                         Learn more
                     </NuxtLink>
                 </div>
-            </div>
-            <div class="lg:w-5/12 p-2 lg:p-0">
-                <img class="object-cover" src="/img/home-1-img-1_900x.jpg" alt="background">
-            </div>
+        </div>
+        <div class="lg:w-5/12 p-2 lg:p-0">
+            <img class="object-cover" src="/img/home-1-img-1_900x.jpg" alt="background">
         </div>
     </section>
-    <section>
-        <div class="mt-20 w-full flex justify-center items-center">
-            <div class="md:h-[35rem] lg:h-[30rem] w-11/12 bg-stone-100 flex flex-col md:flex-row justify-around items-center p-4 relative">
+    <section class="mt-20 w-full flex justify-center items-center">
+        <div class="md:h-[35rem] lg:h-[30rem] w-11/12 bg-stone-100 flex flex-col md:flex-row justify-around items-center p-4 relative">
                 <div class="md:w-1/4 flex flex-col justify-around items-center h-full md:mr-auto mt-72 md:mt-auto space-y-6 md:space-y-0">
                     <div class="flex flex-col">
                         <span class="text-sm text-stone-400">01.</span>
@@ -193,15 +184,13 @@
                         </p>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
-    <section>
-        <div class="mt-16 lg:mt-28 w-full flex flex-col lg:flex-row justify-evenly lg:items-center gap-5">
-            <div class="lg:w-5/12 p-2 lg:p-0">
+    <section class="mt-16 lg:mt-28 w-full flex flex-col lg:flex-row justify-evenly lg:items-center gap-5">
+        <div class="lg:w-5/12 p-2 lg:p-0">
                 <img class="object-cover" src="/img/home-1-img-2_900x.jpg" alt="background">
-            </div>
-            <div class="w-full lg:w-1/3 flex flex-col justify-around p-3 sm:p-7 lg:p-0">
+        </div>
+        <div class="w-full lg:w-1/3 flex flex-col justify-around p-3 sm:p-7 lg:p-0">
                 <span class="font-medium text-4xl caption-bottom text-gray-700">
                     Designed for Those Who Evade Limits
                 </span>
@@ -213,15 +202,13 @@
                         Read our story
                     </NuxtLink>
                 </div>
-            </div>
         </div>
     </section>
-    <section>
-        <div class="mt-20 lg:mt-32 flex flex-col flex-auto justify-center items-center">
-            <div>
+    <section class="mt-20 lg:mt-32 flex flex-col flex-auto justify-center items-center">
+        <div>
                 <span class="font-medium text-3xl lg:text-5xl">Our Bestsellers</span>
-            </div>
-            <div class="flex flex-wrap items-center justify-center gap-5 md:p-0 w-full p-2 mt-10 lg:mt-14">
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-5 md:p-0 w-full p-2 mt-10 lg:mt-14">
                 <div class="bg-stone-100 w-80 h-full p-5 relative group transition-all">
                     <div class="absolute start-5 top-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -370,12 +357,11 @@
                         </NuxtLink>
                     </div>
                 </div>
-            </div>
-            <div class="mt-14 lg:mt-32">
+        </div>
+        <div class="mt-14 lg:mt-32">
                 <NuxtLink to="#" class="uppercase text-sm font-medium px-6 py-4 border border-gray-500 hover:text-white hover:bg-black duration-500 delay-100 hover:border-black text-gray-800">
                     show all
                 </NuxtLink>
-            </div>
         </div>
     </section>
 </template>
