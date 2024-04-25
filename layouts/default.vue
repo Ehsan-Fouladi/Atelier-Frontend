@@ -1,6 +1,6 @@
 <template>
   <header class="flex w-full h-20 z-50">
-    <nav class="flex flex-1 justify-between items-center w-full shadow-lg lg:p-10 p-4 uppercase">
+    <nav class="flex flex-1 justify-between items-center w-full lg:p-10 p-4 uppercase">
       <ul class="cursor-pointer hidden lg:flex items-center space-x-7">
         <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600 relative" @click="MenuHome">
           <NuxtLink to="#" class="font-medium text-sm">home</NuxtLink >
@@ -55,7 +55,7 @@
         </li>
       </ul>
       <!-- Menu Tablet -->
-      <div class="hidden sm:block lg:hidden">
+      <div class="hidden sm:block lg:hidden z-50">
         <div @click="Tablet" v-if="MenuTablet">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-7">
@@ -194,7 +194,7 @@
         </li>
       </ul>
       <!-- Menu Mobile -->
-      <div class="sm:hidden">
+      <div class="sm:hidden z-50">
         <div @click="Tablet" v-if="MenuTablet">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-7">
