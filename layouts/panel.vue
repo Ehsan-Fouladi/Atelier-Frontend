@@ -36,7 +36,7 @@
               <span class="text-indigo-500 capitalize">Dashboard</span>
             </div>
           </NuxtLink>
-          <NuxtLink to="/panel" class="relative flex justify-center items-center group">
+          <NuxtLink to="/panel/profile" class="relative flex justify-center items-center group">
             <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-slate-500 hover:text-indigo-500"
               viewBox="0 0 24 24">
               <path fill="currentColor"
