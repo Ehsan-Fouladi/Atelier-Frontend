@@ -6,16 +6,22 @@
           <img class="object-cover rounded-xl" src="/img/clock-product-1.png" alt="production" draggable="false">
         </div>
         <div class="flex flex-col lg:ml-10 w-full lg:space-y-10 lg:pb-20 mt-5 lg:mt-auto space-y-5">
-          <span class="text-lg font-medium capitalize">Reprizo Gold Dial Watch</span>
-          <span class="font-medium capitalize flex justify-between">Discount <span class="line-through">$600.00</span></span>
-          <span class="font-medium capitalize flex justify-between">Price <span>$500.00</span></span>
+          <span class="text-lg font-medium capitalize text-gray-700">Reprizo Gold Dial Watch</span>
+          <span class="font-medium capitalize flex justify-between text-gray-700">
+            Discount 
+            <span class="line-through">$600.00</span>
+          </span>
+          <span class="font-medium capitalize flex justify-between text-gray-700">
+            Price 
+            <span>$500.00</span>
+          </span>
           <div class="flex justify-between items-center">
-            <NuxtLink to="" class="text-xs sm:text-base font-semibold sm:font-medium px-4 py-3 bg-[#f73164] hover:bg-[#ff1751] rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
+            <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-4 py-3 pin bg-pink-red hover:bg-pink-red-dark rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
               delete product
-            </NuxtLink>
-            <NuxtLink to="" class="text-xs sm:text-base font-semibold sm:font-medium px-4 py-3 bg-[#6f4ef2] hover:bg-[#572dff] rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
+            </button>
+            <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-4 py-3 bg-indigo-dark hover:bg-indigo-dark-hover rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
               Order completion
-            </NuxtLink>
+            </button>
           </div>
         </div>
       </div>
