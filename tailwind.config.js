@@ -9,7 +9,14 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor:{
+        'indigo-dark':'#6f4ef2',
+        'indigo-dark-hover':'#572dff',
+        'pink-red':'#f73164',
+        'pink-red-dark':'#ff1751',
+      }
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {

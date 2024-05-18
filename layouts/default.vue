@@ -1,63 +1,66 @@
 <template>
-  <div class="w-full flex flex-col">
+  <div class="w-full flex flex-col overflow-hidden">
     <header class="flex w-full h-20 z-50">
       <nav class="flex flex-1 justify-between items-center w-full lg:p-10 p-4 uppercase">
         <ul class="cursor-pointer hidden lg:flex items-center space-x-7">
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600 relative"
-            @click="MenuHome">
-            <span class="font-medium text-sm">home</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-            <div class="absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4"
-              v-show="!home">
+          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
+            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+              <span>home</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-4 ml-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div tabindex="0" class="dropdown-content menu absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Home Watch</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Home Jewelry</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Home Repair</NuxtLink>
             </div>
-          </li>
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600 relative"
-            @click="MenuPage">
-            <span class="font-medium text-sm">pages</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-            <div class="absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4"
-              v-show="!page">
+          </div>
+
+          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
+            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+              <span>pages</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-4 ml-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div tabindex="0" class="dropdown-content menu absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">about</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">contact</NuxtLink>
             </div>
-          </li>
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600 relative"
-            @click="Menushop">
-            <span class="font-medium text-sm">shop</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-            <div class="absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4"
-              v-show="!shop">
+          </div>
+          
+          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
+            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+              <span>shop</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-4 ml-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div tabindex="0" class="dropdown-content menu absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">All collections</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">All Products</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Single product</NuxtLink>
             </div>
-          </li>
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600 relative"
-            @click="MenuNews">
-            <span class="font-medium text-sm">news</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-            <div class="absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4"
-              v-show="!news">
+          </div>
+
+          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
+            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+              <span>news</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-4 ml-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div tabindex="0" class="dropdown-content menu absolute bg-gray-900 p-5 rounded min-w-56 top-10 flex flex-col flex-shrink space-y-4">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Watches</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Jewelry</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">Repair</NuxtLink>
             </div>
-          </li>
+          </div>
         </ul>
         <!-- Menu Tablet -->
         <div class="hidden sm:block lg:hidden z-50">
@@ -79,7 +82,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile1">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">Home</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -101,7 +104,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile2">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">pages</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -120,7 +123,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile3">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">shop</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -142,7 +145,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile4">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">news</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -165,22 +168,22 @@
         </div>
         <!-- End Menu Tablet -->
         <img class="object-cover max-w-32 md:max-w-44 lg:max-w-[135px]" src="/img/logo.png" alt="logo">
-        <ul class="cursor-pointer flex items-center space-x-5 uppercase">
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600 relative"
-            @click="MenuAccount">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5">
+        <ul class="cursor-pointer flex items-center justify-evenly md:justify-stretch space-x-5 uppercase w-full md:w-auto">
+          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
+            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 lg:mr-2">
               <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
             </svg>
-            <span class="font-medium hidden lg:block">account</span>
-            <div class="absolute bg-gray-900 p-5 rounded min-w-28 top-10 flex flex-col flex-shrink space-y-4"
-              v-show="!account">
+            <span class="hidden lg:block">account</span>
+            </div>
+            <div tabindex="0" class="dropdown-content menu absolute bg-gray-900 p-5 rounded min-w-28 top-10 flex flex-col flex-shrink space-y-4">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">login</NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm">register</NuxtLink>
             </div>
-          </li>
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600">
+          </div>
+          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-5">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -188,7 +191,7 @@
             </svg>
             <span class="font-medium hidden lg:block">Wishlist</span>
           </li>
-          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-gray-600">
+          <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-5">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -218,7 +221,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile1">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">Home</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -240,7 +243,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile2">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">pages</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -259,7 +262,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile3">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">shop</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -281,7 +284,7 @@
                 <div class="flex justify-between items-center" @click="MenuMobile4">
                   <span class="hover:text-yellow-800 duration-300 text-gray-600 font-medium">news</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                 </div>
@@ -316,7 +319,7 @@
             <input type="email" placeholder="Email Address"
               class="font-medium placeholder:text-gray-500 outline-none bg-gray-800 px-3 py-3 text-gray-300 w-full md:w-[40rem] lg:w-96">
             <button type="submit"
-              class="font-medium bg-gray-100 px-5 py-3 hover:bg-yellow-900/70 duration-500 hover:text-white w-full md:w-auto mt-2 md:mt-auto">
+              class="font-medium bg-white text-black px-5 py-3 hover:bg-yellow-900/70 duration-500 hover:text-white w-full md:w-auto mt-2 md:mt-auto">
               Submit
             </button>
           </form>
@@ -386,11 +389,6 @@
   </div>
 </template>
 <script setup>
-const home = ref(true)
-const page = ref(true)
-const shop = ref(true)
-const news = ref(true)
-const account = ref(true)
 const MenuTablet = ref(true)
 const MenuMobileHome = ref(true)
 const MenuMobilePage = ref(true)
@@ -416,22 +414,4 @@ function MenuMobile4() {
 function Tablet() {
   MenuTablet.value = !MenuTablet.value
 }
-
-function MenuAccount() {
-  account.value = !account.value
-}
-
-function MenuHome() {
-  home.value = !home.value
-}
-function MenuPage() {
-  page.value = !page.value
-}
-function Menushop() {
-  shop.value = !shop.value
-}
-function MenuNews() {
-  news.value = !news.value
-}
-
 </script>
