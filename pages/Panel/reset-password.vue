@@ -15,7 +15,7 @@
           <NuxtLink to="/panel/reset-password" class="text-indigo-500 capitalize font-medium">Reset Password</NuxtLink>
         </div>
 
-        <div class="flex justify-center items-center flex-row w-full h-full mt-20 mb-10 md:mb-auto">
+        <div class="flex justify-center items-center flex-row w-full h-full mt-20 md:mb-auto">
           <div class="lg:w-2/3 w-full">
             <span class="capitalize font-semibold text-xl text-black">reset password</span>
             <form method="post" class="p-5 bg-white rounded-xl w-full mt-5 space-y-5">
@@ -35,8 +35,8 @@
               </div>
               
               <div class="w-full pt-3">
-                  <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-7 py-2 bg-indigo-dark hover:bg-indigo-dark-hover rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
-                    save
+                  <button type="submit" class="btn btn-order">
+                    Save
                   </button>
               </div>
             </form>

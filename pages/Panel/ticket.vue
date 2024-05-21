@@ -1,9 +1,9 @@
 <template>
   <div class="bg-[#f2f2f2] md:ml-28">
-    <div class="flex flex-col justify-center items-center my-5 p-2 md:p-0">
+    <div class="flex flex-col justify-center items-center p-2 md:p-0">
       <form method="post" class="w-full md:w-1/2 h-full bg-white rounded-lg p-5">
         <div class="flex justify-center">
-          <span class="font-medium text-2xl">Ticket</span>
+          <span class="font-medium text-2xl text-black">Ticket</span>
         </div>
         <div class="flex flex-col">
           <label for="name" class="font-medium after:content-['*'] after:text-red-500 after:text-lg text-slate-800">

@@ -31,8 +31,8 @@
                   <input type="file" class="text-black">
                 </div>
                 <div class="w-full pt-3">
-                  <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-7 py-2 bg-indigo-dark hover:bg-indigo-dark-hover rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
-                    save
+                  <button type="submit" class="btn btn-order">
+                    Save
                   </button>
                 </div>
               </div>
@@ -50,14 +50,14 @@
                 <input type="password" name="password" class="w-full px-4 py-3 border-2 focus:border-indigo-500 outline-none rounded-lg mt-3 text-black bg-white">
               </div>
               <div class="w-full pt-3">
-                <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-7 py-2 bg-indigo-dark hover:bg-indigo-dark-hover rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
-                  save
+                <button type="submit" class="btn btn-order">
+                  Save
                 </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="flex w-full h-full mt-12 mb-12 md:mb-auto">
+        <div class="flex w-full h-full mt-12 md:mb-auto">
           <div class="w-full">
             <span class="capitalize font-semibold text-xl text-black">Personal Information</span>
             <form method="post" class="p-5 bg-white rounded-xl w-full mt-5 space-y-5 flex flex-col items-center">
@@ -98,8 +98,8 @@
                 </div>
               </div>
               <div class="w-full pt-3">
-                <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-7 py-2 bg-indigo-dark hover:bg-indigo-dark-hover rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
-                  save
+                <button type="submit" class="btn btn-order">
+                  Save
                 </button>
               </div>
             </form>
