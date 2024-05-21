@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <header class="flex flex-col w-full h-full">
-      <div class="w-full h-16 p-4 overflow-hidden bg-white md:bg-[#f2f2f2] shadow-lg md:shadow-none z-50 top-0 sticky">
+      <div class="w-full h-16 p-4 overflow-hidden bg-white md:bg-[#f2f2f2] shadow-md md:shadow-none z-50 top-0 sticky">
         <div class="flex flex-row-reverse items-center justify-between w-full md:pr-10">
           <div class="flex items-center space-x-3">
             <div>
@@ -21,7 +21,8 @@
           </div>
         </div>
       </div>
-      <nav class="w-full h-auto md:w-28 md:h-dvh p-3 md:p-6 flex md:flex-col bg-white shadow-lg bottom-0 fixed md:bottom-auto z-50">
+      <slot />
+      <nav class="w-full h-full md:w-28 md:h-dvh p-3 md:p-6 flex md:flex-col bg-white bottom-0 sticky md:fixed md:bottom-auto z-50">
         <NuxtLink to="/panel" class="hidden md:block">
           <img class="object-cover" src="/img/logo.png" alt="logo" draggable="false">
         </NuxtLink>
@@ -79,6 +80,5 @@
         </NuxtLink>
       </nav>
     </header>
-    <slot />
   </div>
 </template>
