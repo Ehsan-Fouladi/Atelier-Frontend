@@ -2,9 +2,9 @@
   <div class="w-full flex flex-col overflow-hidden">
     <header class="flex w-full h-20 z-50">
       <nav class="flex flex-1 justify-between items-center w-full lg:p-10 p-4 uppercase">
-        <ul class="cursor-pointer hidden lg:flex items-center space-x-7">
-          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
-            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+        <ul class="cursor-pointer hidden lg:flex items-center space-x-4">
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <span>home</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-4 ml-3">
@@ -18,8 +18,8 @@
             </div>
           </div>
 
-          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
-            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <span>pages</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-4 ml-3">
@@ -32,8 +32,8 @@
             </div>
           </div>
           
-          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
-            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <span>shop</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-4 ml-3">
@@ -47,8 +47,8 @@
             </div>
           </div>
 
-          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
-            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <span>news</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-4 ml-3">
@@ -169,8 +169,8 @@
         <!-- End Menu Tablet -->
         <img class="object-cover max-w-32 md:max-w-44 lg:max-w-[135px]" src="/img/logo.png" alt="logo">
         <ul class="cursor-pointer flex items-center justify-evenly md:justify-stretch space-x-5 uppercase w-full md:w-auto">
-          <div class="dropdown hover:text-yellow-800 duration-300 flex items-center gap-2 text-white relative">
-            <div tabindex="0" role="button" class="font-medium text-sm flex items-center justify-center">
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-5 lg:mr-2">
               <path stroke-linecap="round" stroke-linejoin="round"
