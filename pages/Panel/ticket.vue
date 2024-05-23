@@ -37,7 +37,7 @@
           </textarea>
         </div>
         <div class="mt-7">
-          <button class="px-10 py-2 bg-green-500 rounded-xl hover:-translate-y-2 transition-all duration-700 hover:bg-transparent border border-green-500 text-white hover:text-black font-medium">Submit</button>
+          <button class="btn btn-success">Submit</button>
         </div>
       </form>
     </div>

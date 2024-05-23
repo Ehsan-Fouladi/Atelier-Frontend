@@ -31,7 +31,7 @@
                   <input type="file" class="text-black">
                 </div>
                 <div class="w-full pt-3">
-                  <button type="submit" class="btn btn-order">
+                  <button type="submit" class="btn btn-primary">
                     Save
                   </button>
                 </div>
@@ -50,7 +50,7 @@
                 <input type="password" name="password" class="w-full px-4 py-3 border-2 focus:border-indigo-500 outline-none rounded-lg mt-3 text-black bg-white">
               </div>
               <div class="w-full pt-3">
-                <button type="submit" class="btn btn-order">
+                <button type="submit" class="btn btn-primary">
                   Save
                 </button>
               </div>
@@ -98,7 +98,7 @@
                 </div>
               </div>
               <div class="w-full pt-3">
-                <button type="submit" class="btn btn-order">
+                <button type="submit" class="btn btn-primary">
                   Save
                 </button>
               </div>

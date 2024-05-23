@@ -35,7 +35,7 @@
               </div>
               
               <div class="w-full pt-3">
-                  <button type="submit" class="btn btn-order">
+                  <button type="submit" class="btn btn-primary">
                     Save
                   </button>
               </div>

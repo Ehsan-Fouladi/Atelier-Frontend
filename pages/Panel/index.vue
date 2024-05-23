@@ -16,10 +16,10 @@
             <span>$500.00</span>
           </span>
           <div class="flex justify-between items-center">
-            <button type="submit" class="btn btn-delete">
+            <button type="submit" class="btn btn-error text-error-content">
               Delete Product
             </button>
-            <button type="submit" class="btn btn-order">
+            <button type="submit" class="btn btn-primary text-primary-content">
               Order Completion
             </button>
           </div>
