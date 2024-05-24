@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#f2f2f2] md:ml-28">
-    <div class="flex flex-col justify-center items-center my-5 p-2 md:p-0">
+  <div class="bg-gray-20 md:ml-28">
+    <div class="flex flex-col justify-center items-center p-2 md:p-0">
       <div class="bg-white md:w-4/5 lg:w-3/5 h-full p-5 rounded-xl flex flex-col lg:flex-row items-center my-5" v-for="i in 10">
         <div>
           <img class="object-cover rounded-xl" src="/img/clock-product-1.png" alt="production" draggable="false">
@@ -16,11 +16,11 @@
             <span>$500.00</span>
           </span>
           <div class="flex justify-between items-center">
-            <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-4 py-3 pin bg-pink-red hover:bg-pink-red-dark rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
-              delete product
+            <button type="submit" class="btn btn-error text-error-content">
+              Delete Product
             </button>
-            <button type="submit" class="text-xs sm:text-base font-semibold sm:font-medium px-4 py-3 bg-indigo-dark hover:bg-indigo-dark-hover rounded-xl text-white capitalize cursor-pointer transition-all duration-300">
-              Order completion
+            <button type="submit" class="btn btn-primary text-primary-content">
+              Order Completion
             </button>
           </div>
         </div>
