@@ -9,7 +9,11 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        "gray-20":"#f2f2f2"
+      }
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
@@ -17,20 +21,26 @@ export default {
       {
         halloween: {
           ...require("daisyui/src/theming/themes")["halloween"],
-          primary: "blue",
+          primary: "#0091ea",
           "primary-content": "white",
-          error: "red",
+          error: "#f70b26",
           "error-content": "white",
-          warning: "yellow",
+          warning: "#ff6f0f",
           "warning-content": "black",
-          success: "green",
+          success: "#0fd85f",
           "success-content": "white",
-          info: "cyan",
+          info: "#05c2d5",
           "info-content": "black",
-          accent: "orange",
+          accent: "#ff7f0b",
           "accent-content": "black",
-          neutral: "black",
+          neutral: "#121212",
           "neutral-content": "white",
+          secondary: "#5576a2",
+          "secondary-content":"white",
+          "base-100":"#6c463c",
+          "base-200":"#865b48",
+          "base-300":"#9c7156",
+          "base-content":"#ffff"
         },
       }
     ]
