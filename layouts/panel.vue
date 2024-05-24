@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <header class="flex flex-col w-full h-full">
-      <div class="w-full h-16 p-4 overflow-hidden bg-white md:bg-[#f2f2f2] shadow-md md:shadow-none z-50 top-0 sticky">
+      <div class="w-full h-16 p-4 overflow-hidden bg-white md:bg-gray-20 shadow-md md:shadow-none z-50 top-0 sticky">
         <div class="flex flex-row-reverse items-center justify-between w-full md:pr-10">
           <div class="flex items-center space-x-3">
             <div>

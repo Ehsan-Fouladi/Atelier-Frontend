@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#f2f2f2] md:ml-28">
+  <div class="bg-gray-20 md:ml-28">
     <div class="flex flex-col justify-center items-center p-2 md:p-0">
       <div class="bg-white md:w-4/5 lg:w-3/5 h-full p-5 rounded-xl flex flex-col lg:flex-row items-center my-5" v-for="i in 10">
         <div>
