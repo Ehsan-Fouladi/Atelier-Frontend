@@ -9,7 +9,7 @@
         </div>
       </div>
       <div class="flex items-center">
-        <NuxtLink to="/panel">
+        <NuxtLink to="/">
           <img class="object-cover w-20" src="/img/logo.png" alt="logo" draggable="false">
         </NuxtLink>
       </div>
@@ -33,7 +33,7 @@
         </NuxtLink>
       </div>
       <!-- page -->
-      <div class="min-h-svh py-20 md:py-0 overflow-auto">
+      <div class="min-h-svh py-20 md:py-0 overflow-auto bg-base-content">
         <NuxtPage />
       </div>
     </div>
