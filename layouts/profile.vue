@@ -22,7 +22,7 @@
         <NuxtLink to="/profile" class="flex justify-center items-center group">
           <svg-dashboard :active="true" title="Dashboard" />
         </NuxtLink>
-        <NuxtLink to="/profile/profile" class="flex justify-center items-center group">
+        <NuxtLink to="/profile/edit" class="flex justify-center items-center group">
           <svg-profile :active="false" title="profile" />
         </NuxtLink>
         <NuxtLink to="/profile/ticket" class="flex justify-center items-center group">
@@ -37,6 +37,7 @@
         <NuxtPage />
       </div>
     </div>
+    
     <!-- navbar -->
     <nav class="w-full flex items-center justify-evenly fixed bg-base-100 bottom-0 left-0 h-16 md:hidden">
       <NuxtLink to="/profile" class="flex justify-center items-center group">
