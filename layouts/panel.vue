@@ -33,7 +33,7 @@
         </NuxtLink>
       </div>
       <!-- page -->
-      <div class="min-h-svh py-20 md:py-0 overflow-auto bg-base-content">
+      <div class="min-h-svh py-20 md:py-0 overflow-auto bg-base-content w-full h-full">
         <NuxtPage />
       </div>
     </div>
