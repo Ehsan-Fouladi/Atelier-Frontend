@@ -20,13 +20,13 @@
       <!-- links -->
       <div class="hidden md:flex flex-col w-44 h-full items-center justify-evenly">
         <NuxtLink to="/profile" class="flex justify-center items-center group">
-          <svg-dashboard :active="true" title="Dashboard" />
+          <svg-dashboard :active="check_active_page('profile')" title="Dashboard" />
         </NuxtLink>
         <NuxtLink to="/profile/edit" class="flex justify-center items-center group">
-          <svg-profile :active="false" title="profile" />
+          <svg-profile :active="check_active_page('edit')" title="profile" />
         </NuxtLink>
         <NuxtLink to="/profile/ticket" class="flex justify-center items-center group">
-          <svg-ticket :active="false" title="ticket" />
+          <svg-ticket :active="check_active_page('ticket')" title="ticket" />
         </NuxtLink>
         <NuxtLink to="/" class="flex justify-center items-center">
           <svg-exit :active="false" title="exit" />
@@ -41,13 +41,13 @@
     <!-- navbar -->
     <nav class="w-full flex items-center justify-evenly fixed bg-base-100 bottom-0 left-0 h-16 md:hidden">
       <NuxtLink to="/profile" class="flex justify-center items-center group">
-        <svg-dashboard :active="true" title="Dashboard" />
+        <svg-dashboard :active="check_active_page('profile')" title="Dashboard" />
       </NuxtLink>
       <NuxtLink to="/profile/edit" class="flex justify-center items-center group">
-        <svg-profile :active="false" title="profile" />
+        <svg-profile :active="check_active_page('edit')" title="profile" />
       </NuxtLink>
       <NuxtLink to="/profile/ticket" class="flex justify-center items-center group">
-        <svg-ticket :active="false" title="ticket" />
+        <svg-ticket :active="check_active_page('ticket')" title="ticket" />
       </NuxtLink>
       <NuxtLink to="/" class="flex justify-center items-center">
         <svg-exit :active="false" title="exit" />
@@ -55,3 +55,20 @@
     </nav>
   </div>
 </template>
+
+<script setup>
+const current_page = () => {
+  let paths = useRoute().fullPath.split('/')
+
+  if (paths.length === 2) {
+    return paths[1]
+  }
+
+  return paths[2]
+}
+
+const check_active_page = (page) => {
+  return current_page() === page
+}
+
+</script>
