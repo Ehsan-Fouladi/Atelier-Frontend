@@ -18,7 +18,7 @@
     <!-- page and navbar -->
     <div class="flex flex-col md:flex-row w-full gap-2 h-svh">
       <!-- links -->
-      <div class="hidden md:flex flex-col w-44 h-full items-center justify-evenly">
+      <div class="hidden md:flex flex-col w-20 h-full items-center justify-evenly">
         <NuxtLink to="/profile" class="flex justify-center items-center group">
           <svg-dashboard :active="check_active_page('profile')" title="Dashboard" />
         </NuxtLink>
