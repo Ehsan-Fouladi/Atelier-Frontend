@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col w-full h-fit">
     <!-- orders -->
-    <div class="flex flex-col gap-2 w-full items-center justify-center">
+    <div class="flex flex-col gap-2 w-full items-center justify-center py-4">
       <div
-        class="bg-base-300 text-base-content w-11/12 md:w-4/5 lg:w-3/5 h-full p-5 rounded-xl flex flex-col lg:flex-row items-center"
+        class="bg-base-300 text-base-content w-11/12 max-w-lg xl:max-w-xl p-5 rounded-xl flex flex-col lg:flex-row items-center"
         v-for="i in 10">
         <div class="w-full md:w-2/3">
           <img class="object-cover rounded-xl" src="/img/clock-product-1.png" alt="production" draggable="false">

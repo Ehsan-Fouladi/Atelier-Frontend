@@ -6,13 +6,10 @@
         <span class="text-2xl text-balance font-bold text-black">Profile</span>
         <div class="flex justify-between">
           <span class="capitalize text-slate-500 text-pretty">Welcome To Online Shop Me</span>
-          <span class="capitalize text-slate-500 text-nowrap">
-            <NuxtLink to="/panel/profile">profile</NuxtLink> > <NuxtLink to="/panel/reset-password">reset password</NuxtLink>
-          </span>
         </div>
         <div class="flex gap-5 mt-10">
-          <NuxtLink to="/panel/profile" class="text-slate-500 capitalize font-medium">Profile</NuxtLink>
-          <NuxtLink to="/panel/reset-password" class="text-indigo-500 capitalize font-medium">Reset Password</NuxtLink>
+          <NuxtLink to="/profile/edit" class="text-slate-500 capitalize font-medium">Profile</NuxtLink>
+          <NuxtLink to="/profile/reset-password" class="text-indigo-500 capitalize font-medium">Reset Password</NuxtLink>
         </div>
 
         <div class="flex justify-center items-center flex-row w-full h-full mt-20 md:mb-auto">
