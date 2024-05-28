@@ -1,18 +1,15 @@
 <template>
-  <div class="bg-gray-20 md:ml-28">
+  <div class="bg-gray-20 w-full">
     <div class="flex flex-col items-center p-2 md:p-0">
 
       <div class="pt-10 w-full h-full flex flex-col p-1 md:p-5">
         <span class="text-2xl text-balance font-bold text-black">Profile</span>
         <div class="flex justify-between">
           <span class="capitalize text-slate-500 text-pretty">Welcome To Online Shop Me</span>
-          <span class="capitalize text-slate-500 text-nowrap">
-            <NuxtLink to="/panel/profile">profile</NuxtLink> > <NuxtLink to="/panel/reset-password">reset password</NuxtLink>
-          </span>
         </div>
         <div class="flex gap-5 mt-10">
-          <NuxtLink to="/panel/profile" class="text-slate-500 capitalize font-medium">Profile</NuxtLink>
-          <NuxtLink to="/panel/reset-password" class="text-indigo-500 capitalize font-medium">Reset Password</NuxtLink>
+          <NuxtLink to="/profile/edit" class="text-slate-500 capitalize font-medium">Profile</NuxtLink>
+          <NuxtLink to="/profile/reset-password" class="text-indigo-500 capitalize font-medium">Reset Password</NuxtLink>
         </div>
 
         <div class="flex justify-center items-center flex-row w-full h-full mt-20 md:mb-auto">
