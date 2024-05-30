@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <header
-      class="w-full flex flex-row-reverse items-center justify-between fixed bg-base-100 top-0 left-0 h-16 px-3 md:static">
+      class="w-full flex flex-row-reverse items-center justify-between fixed bg-base-100 top-0 left-0 h-16 px-3">
       <div class="flex items-center space-x-3">
         <SvgBuzzer />
         <div>
@@ -33,7 +33,7 @@
         </NuxtLink>
       </div>
       <!-- page -->
-      <div class="min-h-svh py-20 md:py-0 overflow-auto bg-base-content w-full h-full">
+      <div class="min-h-svh py-20 overflow-auto bg-base-content w-full h-full">
         <NuxtPage />
       </div>
     </div>
