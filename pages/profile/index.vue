@@ -13,7 +13,6 @@
             Order history
           </NuxtLink>
         </div>
-
         <div class="flex flex-col gap-2 w-full items-center justify-center py-4 pt-10">
           <div class="bg-base-300 text-base-content w-11/12 max-w-lg xl:max-w-xl p-5 rounded-xl flex flex-col lg:flex-row items-center"
             v-for="i in 10">
@@ -41,7 +40,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

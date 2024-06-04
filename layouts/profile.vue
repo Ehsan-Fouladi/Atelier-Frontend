@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <header
-      class="w-full flex flex-row-reverse items-center justify-between fixed bg-base-100 top-0 left-0 h-16 px-3 z-50">
+      class="w-full flex flex-row-reverse items-center justify-between fixed bg-base-100 top-0 left-0 h-16 px-3">
       <div class="flex items-center space-x-3">
         <SvgBuzzer />
         <div>
