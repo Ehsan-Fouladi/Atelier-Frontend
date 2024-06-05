@@ -15,9 +15,8 @@
         </div>
 
         <div class="w-full h-full flex items-center pt-8">
-          <div class="bg-white w-full h-[30rem] p-4 rounded-2xl overflow-auto space-y-3">
-
-            <div class="border border-black p-4 rounded-xl flex flex-col overflow-hidden" v-for="i in 12">
+          <div class="bg-white w-full p-4 rounded-2xl space-y-3">
+            <div class="border border-black p-4 rounded-xl flex flex-col overflow-hidden" v-for="i in 10">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
                   <svg class="w-6 h-6 flex-none mt-0.5" fill="none" viewBox="0 0 24 24">
@@ -49,10 +48,9 @@
                 <span class="font-medium text-black ml-2">Total points <span class="font-normal ml-1">.47</span></span>
               </div>
               <div class="flex border mt-5 rounded-lg">
-                <img class="size-32 object-cover scale-110 hover:scale-105 duration-500 delay-100" src="/img/clock-product-1.png" alt="product" draggable="false">
+                <img class="size-32 object-cover scale-110 hover:scale-105 duration-500 delay-100 ease-in" src="/img/clock-product-1.png" alt="product" draggable="false">
               </div>
             </div>
-
           </div>
         </div>
       </div>
