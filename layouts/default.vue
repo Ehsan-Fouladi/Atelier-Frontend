@@ -11,7 +11,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
             </div>
-            <div tabindex="0" class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
+            <div tabindex="0"
+              class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
                 Home Watch
               </NuxtLink>
@@ -32,7 +33,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
             </div>
-            <div tabindex="0" class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
+            <div tabindex="0"
+              class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
                 about
               </NuxtLink>
@@ -41,7 +43,7 @@
               </NuxtLink>
             </div>
           </div>
-          
+
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost">
               <span>shop</span>
@@ -50,7 +52,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
             </div>
-            <div tabindex="0" class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
+            <div tabindex="0"
+              class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
                 All collections
               </NuxtLink>
@@ -71,7 +74,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
             </div>
-            <div tabindex="0" class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
+            <div tabindex="0"
+              class="dropdown-content menu bg-gray-900 p-5 rounded min-w-56 flex flex-col flex-shrink space-y-4 transition-all">
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
                 Watches
               </NuxtLink>
@@ -190,23 +194,28 @@
         </div>
         <!-- End Menu Tablet -->
         <img class="object-cover max-w-32 md:max-w-44 lg:max-w-[135px]" src="/img/logo.png" alt="logo">
-        <ul class="cursor-pointer flex items-center justify-evenly md:justify-stretch space-x-5 uppercase w-full md:w-auto">
+        <ul
+          class="cursor-pointer flex items-center justify-evenly md:justify-stretch space-x-5 uppercase w-full md:w-auto">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 lg:mr-2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-            </svg>
-            <span class="hidden lg:block">account</span>
+                stroke="currentColor" class="size-5 lg:mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+              <span class="hidden lg:block">account</span>
             </div>
-            <div tabindex="0" class="dropdown-content menu bg-gray-900 p-5 rounded min-w-36 flex flex-col flex-shrink space-y-4 transition-all">
-              <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
+            <div tabindex="0" v-if="!$useUserCookie.isLogin()"
+              class="dropdown-content menu bg-gray-900 p-5 rounded min-w-36 flex flex-col flex-shrink space-y-4 transition-all">
+              <NuxtLink to="/auth/login" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
                 login
               </NuxtLink>
               <NuxtLink to="#" class="text-white hover:text-yellow-800 font-medium text-sm duration-500">
                 register
               </NuxtLink>
+            </div>
+            <div v-else>
+              Profile page
             </div>
           </div>
           <li class="hover:text-yellow-800 duration-300 flex items-center gap-2 text-white">
@@ -415,6 +424,7 @@
   </div>
 </template>
 <script setup>
+const { $useUserCookie } = useNuxtApp()
 const MenuTablet = ref(true)
 const MenuMobileHome = ref(true)
 const MenuMobilePage = ref(true)
