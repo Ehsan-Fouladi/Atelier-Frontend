@@ -490,4 +490,6 @@
     </main>
 </template>
 <script setup>
+const { $useUserCookie } = useNuxtApp()
+
 </script>

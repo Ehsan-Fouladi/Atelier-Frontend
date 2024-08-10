@@ -107,7 +107,10 @@
   </div>
 </template>
 <script setup>
+import AuthenticationMiddleware from '~/middlewares/AuthenticationMiddleware';
+
 definePageMeta({
     layout: 'profile',
+    middleware: AuthenticationMiddleware
 })
 </script>

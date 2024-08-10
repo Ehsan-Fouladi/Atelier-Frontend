@@ -14,7 +14,8 @@
           </NuxtLink>
         </div>
         <div class="flex flex-col gap-2 w-full items-center justify-center py-4 pt-10">
-          <div class="bg-base-300 text-base-content w-11/12 max-w-lg xl:max-w-xl p-5 rounded-xl flex flex-col lg:flex-row items-center"
+          <div
+            class="bg-base-300 text-base-content w-11/12 max-w-lg xl:max-w-xl p-5 rounded-xl flex flex-col lg:flex-row items-center"
             v-for="i in 10">
             <div class="w-full md:w-2/3">
               <img class="object-cover rounded-xl" src="/img/clock-product-1.png" alt="production" draggable="false">
@@ -45,7 +46,16 @@
   </div>
 </template>
 <script setup>
+import AuthenticationMiddleware from '~/middlewares/AuthenticationMiddleware';
+
 definePageMeta({
   layout: 'profile',
+  middleware: AuthenticationMiddleware
+})
+
+onMounted(() => {
+  const nuxtApp = useNuxtApp()
+
+  console.log(nuxtApp.$useUserCookie.getUserData())
 })
 </script>
