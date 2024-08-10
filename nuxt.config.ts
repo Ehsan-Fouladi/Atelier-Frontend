@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  plugins: ['~/plugins/userCookies.ts', 
+    '~/plugins/axios.ts'
+  ],
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
